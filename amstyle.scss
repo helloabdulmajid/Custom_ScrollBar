@@ -1,0 +1,41 @@
+* {
+    padding: 10px;
+  }
+  h1 {
+    color: aquamarine;
+  }
+  h3 {
+    color: yellowgreen;
+  }
+  p {
+    color: indianred;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 1.7rem;
+    height: 3em;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(20, 50% ,75% /1);
+    border-radius: 100vw;
+    margin-block: .5em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(10, 60% , 5% /1);
+      border: .25em solid hsl(35%, 85% ,50% /1);
+      border-radius: 100vw;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(120, 30% , 10% /1);
+   
+}
+
+// For firefox browser support 
+
+@supports(scrollbar-color: red blue){
+    *{
+        scrollbar-color:hsl(20, 50% ,75% /1)  hsl(10, 60% , 5% /1);
+        scrollbar-width: 2em;
+    }
+}
+  

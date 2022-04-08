@@ -1,0 +1,44 @@
+* {
+  padding: 10px;
+}
+
+h1 {
+  color: aquamarine;
+}
+
+h3 {
+  color: yellowgreen;
+}
+
+p {
+  color: indianred;
+}
+
+::-webkit-scrollbar {
+  width: 1.7rem;
+  height: 3em;
+}
+
+::-webkit-scrollbar-track {
+  background: #dfb59f;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #140805;
+  border: 0.25em solid #ec9213;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #122112;
+}
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #dfb59f #140805;
+    scrollbar-width: 2em;
+  }
+}
+/*# sourceMappingURL=amstyle.css.map */
